@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Book2023.DL.interfaces
+namespace Book2023.BL.Interfaces
 {
-    internal interface IBookRepository
+    public interface IBookservice
     {
         public void AddBook(Book book);
 
@@ -17,8 +17,11 @@ namespace Book2023.DL.interfaces
 
         public Book GetBook(int id);
 
-        public List<Book> getAllBooks ();   
-
-     
+        public List<Book> GetAllBooks();
+        Book GetById(int id);
+        void Remove(int id);
     }
 }
+
+    
+ 

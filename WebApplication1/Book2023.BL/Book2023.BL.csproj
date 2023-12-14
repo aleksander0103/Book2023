@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Book2023.DL\Book2023.DL.csproj" />
+    <ProjectReference Include="..\Book2023.models\Book2023.models.csproj" />
+  </ItemGroup>
+
 </Project>
