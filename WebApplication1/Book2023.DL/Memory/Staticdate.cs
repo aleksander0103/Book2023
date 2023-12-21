@@ -2,11 +2,12 @@
 
 using Book2023.models;
 
+
 namespace Book2023.DL.Memory
 {
     public static class Staticdate
     {
-        public static List<Book> books = new List<Book>()
+        public static List<Book> Books = new List<Book>()
         {
             new Book()
             {
@@ -32,10 +33,41 @@ namespace Book2023.DL.Memory
 
         };
 
-        public static List<Book> Books { get => books; set => books = value; }
-        public static object Book { get; internal set; }
+        public static List<Author> Authors = new List<Author>()
+        {
+            new Author()
+            {
+                Id = 1,
+                Title = "Author 1"
+            },
 
-        internal static object Add(Book book)
+
+            new Author()
+            {
+                Id = 2,
+                Title = "Author 2"
+            },
+        {
+                new Author()
+                {
+                    Id = 3,
+                    Title = "Author 3"
+                }
+            }
+
+
+
+        };
+        internal static object author;
+
+        public static object Author { get; internal set; }
+
+        internal static object Add(Author author)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal static object Add(object author)
         {
             throw new NotImplementedException();
         }

@@ -22,13 +22,13 @@ namespace Book2023.DL.Repository
                 Staticdate.Books
                 .FirstOrDefault(b => b.Id == id);
             if (book == null) return;
-            Staticdate.books.Remove(book);
+            Staticdate.Books.Remove(book);
 
         }
         public void UpdateBook(Book book)
         {
             var existingBook =
-                Staticdate.books
+                Staticdate.Books
                 .FirstOrDefault(b => b.Id == id);
             if (existingBook == null) return;
             existingBook.Title = book.Title;
