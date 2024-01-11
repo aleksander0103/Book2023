@@ -1,4 +1,4 @@
-﻿using Book2023.models;
+﻿using Book2023.models.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,6 +20,7 @@ namespace Book2023.BL.Interfaces
         public List<Book> GetAllBooks();
         Book GetById(int id);
         void Remove(int id);
+        List<Book> GetAllByAuthorAfterReleaseDate(int authorID, DateTime dateAfter);
     }
 }
 

@@ -1,7 +1,4 @@
-﻿
-
-using Book2023.models;
-
+﻿using Book2023.models.Models;
 
 namespace Book2023.DL.Memory
 {

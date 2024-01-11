@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Book2023.models
+namespace Book2023.models.Models
 {
     public class Author
     {

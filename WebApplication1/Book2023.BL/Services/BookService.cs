@@ -1,6 +1,6 @@
 ﻿using Book2023.BL.Interfaces;
 using Book2023.DL.interfaces;
-using Book2023.models;
+using Book2023.models.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,6 +23,11 @@ namespace Book2023.BL.Services
         }
 
         public List<Book> GetAllBooks()
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Book> GetAllByAuthorAfterReleaseDate(int authorID, DateTime dateAfter)
         {
             throw new NotImplementedException();
         }
