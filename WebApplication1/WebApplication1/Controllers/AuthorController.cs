@@ -22,7 +22,7 @@ namespace Book2023.Controllers
             return _authorRepository.GetAuthor(id);
 
         }
-        [HttpGet("GetById")]
+        [HttpGet("{GetById}")]
         public Author GetById(int id)
         {
             return _authorRepository.GetById(id);
@@ -32,7 +32,7 @@ namespace Book2023.Controllers
         {
             _authorRepository.AddAuthor(author);
         }
-        [HttpDelete("Delete")]
+        [HttpDelete("{Delete}")]
         public void Delete(int id)
         {
             _authorRepository.Remove(id);

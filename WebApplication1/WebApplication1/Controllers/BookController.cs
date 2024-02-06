@@ -22,7 +22,7 @@ namespace Book2023.Controllers
             return _bookservice.GetBook(id);
 
         }
-        [HttpGet("GetById")]
+        [HttpGet("{GetById}")]
         public Book GetById(int id)
         {
             return _bookservice.GetById(id);
@@ -30,7 +30,7 @@ namespace Book2023.Controllers
         [HttpDelete("Add")]
         public void Add([FromBody] Book book) { _bookservice.AddBook(book);
         }
-        [HttpDelete("Delete")]
+        [HttpDelete("{Delete}")]
         public void Delete(int id)
         {
             _bookservice.Remove(id);
